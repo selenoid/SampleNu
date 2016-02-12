@@ -1,0 +1,150 @@
+
+
+
+CLUSTER GAME DEVELOPMENT - CLIENT SIDE AND SERVER-SIDE SERVICES IMPLEMENTATION PRE- PROPOSITION
+
+
+Hereby Emre Selen ( will be referenced as contractor from this point forward) proposes the business owner to accomplish the services in accordance with the conditions, timing, and approximate charge, as defined below.
+
+
+	I - SCOPE 
+	
+	A total of 10 (ten) HTML5 - Javascript based desktop and mobile compatible games and several server-side software development to maintain the services needed to accomplish client and server-side requirements of these games, as declared below in part II, along with the installment, running and preperations for taking the the site online, 'n 3 (three) months' interval.
+
+	
+	II - İÇERİK
+	
+	a -  Client-side HTML5 - Javascript programming, additional / supplementary design and *minor revisions.
+	
+		1 - Programming and adaptation services of the interactive games which will be developed by using server-side fueled socket and/or REST api services.
+		
+			- Resposive development will be carried out throughout UI (i.e.User Interface) development, optimizing both the desktop and mobile environment.
+			
+			- Will or may use server-side and/or client based dynamically calculated and predefined slot game reel configuration.
+			
+			- No hard-coded data or configuration about the game logic will be implemented on HTML, Javascript or bounded documents, except the most crucial UI code.
+			
+			- Game will allow any dynamically defined amount of free-spins and/or bonus plays.
+			
+			- The application will present:
+				
+				a. buttons for cachier status feedback, start game, leave game, automated buttons with ***settings, that will read; "5 spins", "10 spins", "50 spins", "100 spins".
+				
+				b. betting buttons for incrementing and decrementing per 0.25 of the currency basis, as well as a max bet one.
+				
+				c. sound fx and visual elements quality settings, based on the primary game settings.
+				
+				d. a Start spin and Stop spin button
+				
+				e. Line + and Line - buttons.
+				
+				f. Payouts button.
+					
+		
+		2 - Maintenance and *minor revision services free of charge, throughout a mutually agreed interval.
+		
+		3 - Active counselling during development and post-online phases.
+		
+		
+	b - MSSQL database installment, management and programming software on a server running ASP.NET version >= 4.5
+		
+			
+		1 - Developments of services that will be serving client-side applications, declared below.
+			
+			- A communication layer based on Web socket and/or REST api, depending on the service needed. 
+			- If membership development is needed, will be added to the development phases and will be charged additionally.
+			
+			1.a - Authentication
+			
+				- Facebook or google authentication (OAuth 2.0 or equivalent) may be implemented along with server-side backup  if prefered and/or appropriate.
+				- Authentication will be processed with user token supplied by website, per game and/or session basis, instantaneously.
+				- Token will validate a user with profile such as name surname nickname and balance.
+				- During authentication process an application id will be passed to the server in order to load game for user.
+				- A game will have simply 2 flags which is enabled and disabled, a disabled game will not be loaded and a valid error message revealing the current situation will be showed to user.
+				- Users will have restriction flags such as banned, limited etc. If a user has a ban status authentication will fail. 
+			
+			1.b - Cashier
+			
+				- The implementation fulfilling the client-side cashier services will be developed using an external API from a working and pre-configured 3rd party cachier application. All the requirements needed to accomplish Cashier function is limited to the 3rd party api.
+				Users balance will be seperated to purses in each session. Each purse will be created with given amount of currency and will be checked from users balance if its available. Whenever an amount of money created with purse this amount will be locked from main user balance, only if our server could be using the 3rd party Cachier program api.
+				
+			1.c - RNG
+			
+				- Each random number will be generated from a RNG hardware only if our server could use an api to retrieve the related random data.
+				- Server will be disabled if any hardware problem occurs during retrieving process of the random number.
+			
+			1.d - Disconnection / Resume
+				
+				- Each sessions game actions will be stored and players could resume their sessions from the point they have stopped, on terms mutually agreed on context basis; and to how extent the player or the administrator would need to resume, i.e. Current status of the player, cache, Status, other players if applicable/ available etc.  
+				
+				- If the session is not resumed for a month or the game logic **changes after a while, players will be refunded with their bets.
+				
+			1.e - Replay Manager
+				
+				- A replay manager will be implemented in conjuction with the UI, that will include main user actions (e.g. mouse clicks, and selections).
+				Replaying will be re-construction of the game with the collected data and re-animating the user actions automatically. It will not be screen capture or live recording based animation.
+	
+	
+	III - GENERAL TERMS
+	
+			This pre-proposition consists of but not limited to the special terms defined as follows;
+			
+			1 - DEVELOPMENT PHASE
+			
+				1.a - Initial Development Phase: 
+					
+					The development of the first phase is 1.5 months and includes;
+				
+					- The development of the base prototype or UI / server-side framework, that is going to be used as a container and base for the rest of the following games that are considered to be developed in later stages, plus one game implementation.
+					
+					- The server-side implementation of the aforementioned features.
+
+					- Installing and preparing for going online.
+					
+					- The initiation of the free-of-charge maintenance and *minor revisions thereof.
+
+					
+				1.b - Secondary Development Phase:
+					
+					The following 9 (nine) games will be developed during this phase and each will be implemented one after another in the remaining 1.5 month.
+					
+					
+				1.c - Tertiary Development Phase:
+					
+					The rest of the cluster will be developed according to the timeline mutually agreed upon.
+					
+					
+	IV - SPECIAL TERMS
+		
+		- Any misunderstanding and/or conflict should be resolved in an utmost mutual good faith.
+		- Any change in terms after the job starts will need to be confirmed by mutual agreement based on good faith.
+		
+		* Revisions require no more than 10 hours of development work per week, 2 hours of work a day or, does not require extra features that would break the on-going development phase and/or current server status.
+		
+		** Changes are required to be informed by the business owner unless another method is declared to be implemented additionally. 
+		
+		*** Settings are server-side configured, via a control panel.
+		
+		
+	V - NOTES
+		
+		- This is a pre propositional document. Due to the agile analysis and preparation considering the urgency of the situation on business owner's side,  final terms and settlement may be reviewed on a meeting for a detailed evaluation of the whole process. Th's document is merely a round-up for mutual good faith and for your consideration of how the contract would consider such a development phase in his own understanding of the current situation and urgency.
+				
+				
+	VI - THE SETTLEMENT
+			
+			- First phase of the development is  € 5000 + V.A.T.
+			
+			- The timing and the liability of this contract will start by the recievement of the 50% charge of the first phase, into the bank account.
+			
+			- After the first phase each game will be charged between  €250 - €750, according to the game style, craftsmen hardship and development requirements, on certain standarts on mutually agreed basis.
+				
+				
+				
+				
+	Have a good day.
+	
+	Contractor Emre Selen.
+				
+				
+				
