@@ -1,16 +1,14 @@
+/* global fetch, require */
+
 var config = require("../../shared/config");
 var fetchModule = require("fetch");
 var ObservableArray = require("data/observable-array").ObservableArray;
 
 function GroceryListViewModel(items) {
 	var viewModel = new ObservableArray(items);
-
+        
 	viewModel.load = function () {
-
-		return fetch(config.apiUrl + "Groceries", {
-			headers : {
-				"Authorization" : "Bearer " + config.token
-			}
+		return fetch("http://contentapi.activebuilder.com/menu/items/8064/1", {
 		})
 		.then(handleErrors)
 		.then(function (response) {
@@ -19,18 +17,16 @@ function GroceryListViewModel(items) {
 			return response.json();
 
 		}).then(function (data) {
-
-			console.log("labalaiyen...");
-
-			data.Result.forEach(function (grocery) {
+			console.log("labalaiyen..." + data);
+			data.forEach(function (menuItem) {
 				console.log("pushing model : " + viewModel.length);
 				viewModel.push({
-					name : grocery.Name,
-					id : grocery.Id
+					name : menuItem.MenuText,
+					id : menuItem.ItemId
 				});
 			});
 		});
-	};
+	}; 
 
 	viewModel.empty = function () {
 		while (viewModel.length) {
@@ -73,7 +69,8 @@ function GroceryListViewModel(items) {
     .then(function() {
         viewModel.splice(index, 1);
     });
-};
+};
+
 
 	return viewModel;
 }
