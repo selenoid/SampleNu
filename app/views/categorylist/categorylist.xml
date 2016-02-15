@@ -1,17 +1,17 @@
 <Page loaded="loaded" navigatedTo="navigatedTo">
     <Page.actionBar>
-        <ActionBar title="Main Menu">
+        <ActionBar title="Category Menu">
             <ActionBar.actionItems>
                 <ActionItem text="Share" tap="share" ios.position="right" />
             </ActionBar.actionItems>
         </ActionBar>
     </Page.actionBar>
     <GridLayout rows="auto, *" columns="2*, *">
-        <ListView items="{{ menuList }}" id="menuList" row="1" colSpan="2">
+        <ListView items="{{ categoryList }}" id="categoryList" row="1" colSpan="2">
             <ListView.itemTemplate>
                 <GridLayout columns="auto,* ,auto" tap="select" >
                     <Image src="res://picmenuikon" ios:visibility="collapsed" col="0" height="90" />
-                    <Label text="{{ menuText }}" col="1"/>
+                    <Label text="{{ title }}" col="1"/>
                     <Image src="res://next" ios:visibility="collapsed" col="2" height="28"/>
                 </GridLayout>
             </ListView.itemTemplate>
